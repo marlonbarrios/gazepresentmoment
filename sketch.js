@@ -4,10 +4,8 @@ let canvas;
 
 // Create a new canvas to the browser size
 function setup() {
- 
   mbsFramework();
   credits();
-
 }
 
 
@@ -21,6 +19,7 @@ function draw() {
   frameRate(1);
   seed = floor(random(0, 1e8));
   randomSeed(seed);
+  console.log(seed);
 
   push();
   scale(0.80);
@@ -48,7 +47,7 @@ function draw() {
       "plum",
       "peru",
       "peachpuff",
-      "pap  ya whip",
+      "papaya whip",
     ]);
 
     const px0 = floor(random(0, count + 1)) * size;
@@ -71,8 +70,7 @@ function draw() {
     // noFill();
   
   rect(px0, py0, px1, py1, 0, size, 0, size);
-  
-    pop();
+  pop();
   }
   fill(0)
 
@@ -125,7 +123,7 @@ function credits() {
   createP("Press 's' to save a png image");
   var link =createA("https://marlonbarrios.github.io/", "Programmed by Marlon Barrios Solano");
 
-  createElement('title', 'aze for the present moment')
+  createElement('title', 'Gaze for the present moment')
 
   var allPs = selectAll("p")
   for (var i = 0; i < allPs.length; i++) {
