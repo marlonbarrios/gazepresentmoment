@@ -22,8 +22,8 @@ function draw() {
   console.log(seed);
 
   push();
-  scale(0.80);
   translate(width / 2, height / 2);
+  scale(0.90);
   translate(-width / 2, -height / 2);
 
   const count = 12;
@@ -42,12 +42,7 @@ function draw() {
       "tan",
       "silver",
       "salmon",
-      "red",
-      "purple",
-      "plum",
       "peru",
-      "peachpuff",
-      "papaya whip",
     ]);
 
     const px0 = floor(random(0, count + 1)) * size;
@@ -70,14 +65,13 @@ function draw() {
     // noFill();
   
   rect(px0, py0, px1, py1, 0, size, 0, size);
-  pop();
+  
+ 
   }
   fill(0)
-
   circle(random(width), random(height/3), random (width/2), height)
-
+  pop();
 }
-
 function keyPressed() {
   let m = month();
   let d = day();
