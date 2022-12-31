@@ -13,13 +13,13 @@ function setup() {
 function draw() {
   // Fill in the background
   colorMode(HSL);
-   noStroke();
+  noStroke();
   background(255);
   noLoop();
   frameRate(1);
-  seed = floor(random(0, 1e8));
-  randomSeed(seed);
-  console.log(seed);
+  // seed = floor(random(0, 108));
+  // randomSeed(seed);
+  // console.log(seed);
 
   push();
   translate(width / 2, height / 2);
@@ -66,12 +66,17 @@ function draw() {
   
   rect(px0, py0, px1, py1, 0, size, 0, size);
   
- 
   }
+
   fill(0)
-  circle(random(width), random(height/3), random (width/2), height)
+
+  scale(0.90);
+  // translate(-width / 2, -height / 2);
+  circle(random(width), random(height), random (width/2), random(height/2))
   pop();
 }
+
+
 function keyPressed() {
   let m = month();
   let d = day();
