@@ -120,12 +120,12 @@ function mbsFramework() {
 
 function credits() {
 //credits
-  createP("Gaze for the present with 12 colorful shapes and a black circle");
-  createP("'My pictures need time...beyond content' Elsworth Kelly" );
+  createP("Gaze for the present moment with 12 colorful shapes and a black circle");
+  createP("'My pictures need time...beyond content' Elssworth Kelly" );
   createP("Press 's' to save a png image");
   var link =createA("https://marlonbarrios.github.io/", "Programmed by Marlon Barrios Solano");
 
-  createElement('title', 'Title on tab')
+  createElement('title', 'aze for the present moment')
 
   var allPs = selectAll("p")
   for (var i = 0; i < allPs.length; i++) {
